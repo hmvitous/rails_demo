@@ -1,12 +1,13 @@
-feature 'User can' do
+feature 'User can edit' do
 
     before do
         create(:article, title: 'Breaking news')
         visit root_path
+        expect(page).to have_content 'Breaking news'
 
     end
 
-    it 'edit an article' do
+    it 'an article' do
         click_on 'Edit Article'
         
     end
