@@ -1,3 +1,5 @@
+require 'pry'
+
 feature 'User can' do
     before do
         visit new_article_path
@@ -5,6 +7,7 @@ feature 'User can' do
 
     context 'Successfully create an article [Happy Path]' do
         before do
+            binding.pry
             fill_in 'Title',  with: 'Happy Holidays'
             fill_in 'Content', with: 'Buy your gifts now!'
             click_on 'Create Article'
