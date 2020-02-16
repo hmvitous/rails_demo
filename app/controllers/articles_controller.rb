@@ -2,6 +2,10 @@ class ArticlesController < ApplicationController
   
   def new
   end
+
+  def edit
+    @article = Article.find(params)
+  end
   
   def create
     render plain: params[:article].inspect
