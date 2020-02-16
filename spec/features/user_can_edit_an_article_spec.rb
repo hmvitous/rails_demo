@@ -8,7 +8,7 @@ feature 'User can edit' do
     end
 
     it 'an article' do
-        click_on 'Edit Article'
+        click_on 'Edit'
         
     end
 
