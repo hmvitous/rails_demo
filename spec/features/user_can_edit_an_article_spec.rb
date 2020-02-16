@@ -12,10 +12,4 @@ feature 'User can edit' do
         click_on 'Save Article'
     end
 
-
-
-
-
-
-
 end
